@@ -1,6 +1,6 @@
 const feeds = [
-    'https://www.theverge.com/rss/index.xml',
-    'https://www.basicappleguy.com/basicappleblog?format=rss'
+    'https://www.aljazeera.com/xml/rss/all.xml',
+    'https://www.aljazeera.com/xml/rss/middleeast.xml'
 ];
 
 const proxy = 'https://api.allorigins.win/get?url=';
