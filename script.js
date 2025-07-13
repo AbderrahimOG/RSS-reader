@@ -1,6 +1,5 @@
 const feeds = [
-    'https://hnrss.org/frontpage',
-    'https://www.aljazeera.net/aljazeera/rss'
+  'https://hnrss.org/frontpage'
 ];
 
 const proxy = 'https://api.codetabs.com/v1/proxy/?quest=';
