@@ -3,7 +3,7 @@ const feeds = [
     'https://www.aljazeera.com/xml/rss/middleeast.xml'
 ];
 
-const proxy = 'https://api.allorigins.win/get?url=';
+const proxy = 'https://api.codetabs.com/v1/proxy/?quest=';
 
 function fetchRSS(url) {
     fetch(proxy + encodeURIComponent(url))
