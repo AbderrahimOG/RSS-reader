@@ -1,15 +1,15 @@
 const feeds = [
-  'https://hnrss.org/frontpage'
+  'https://www.aljazeera.com/xml/rss/all.xml'
 ];
 
-const proxy = 'https://api.codetabs.com/v1/proxy/?quest=';
+const proxy = 'https://api.allorigins.win/get?url=';
 
 function fetchRSS(url) {
   fetch(proxy + encodeURIComponent(url))
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
       const parser = new DOMParser();
-      const xml = parser.parseFromString(data, 'text/xml');
+      const xml = parser.parseFromString(data.contents, 'text/xml');
       const items = xml.querySelectorAll('item');
       const container = document.getElementById('feed');
 
